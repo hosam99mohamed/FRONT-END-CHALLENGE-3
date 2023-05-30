@@ -1,0 +1,121 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+ 
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+}
+
+.logo img{
+    width: 160px;
+    margin-bottom: 50px;
+}
+h1 {
+    font-family: poppins , sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.main {
+    display: flex;
+}
+
+.main-text {
+    color: white;
+    margin-left: 40px;
+}
+.main-text  p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+.main-text  button{
+    width: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    color: var(--Violet);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+.social-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    right: 0;
+}
+.social-links a {
+    margin-right: 20px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd ;
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+}
+.social-links a i {
+    font-size: 20px;
+}
+
+@media (max-width:1200px) {
+    body {
+        width: 400px;
+        margin: 30px auto;
+
+    }
+    .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    img {
+        max-width: 90%;
+        margin: auto;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main-text {
+        text-align: center;
+        margin: 0;
+        margin-top: 60px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .main-text p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .social-links {
+    justify-content: center; 
+    margin-top: 60px;
+   }
+}
+
